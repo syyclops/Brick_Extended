@@ -5,7 +5,7 @@
 3. pip install -r requirements.txt
 4. python3 ifc2brick.py
    - Params:
-     - archModel
-     - mechModel
-     - elecModel
-     - plumModel
+     --ifc, path to ifc file
+     --buildingUri, unique building id
+     --buildingName, building name
+     --out, output .ttl file path
