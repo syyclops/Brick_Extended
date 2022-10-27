@@ -202,6 +202,9 @@ equipment_subclasses = {
             "Stage_Riser": {
                 "tags": [TAG.Equipment, TAG.Furniture, TAG.Stage, TAG.Riser],
             },
+            "Chair": {"tags": [TAG.Equipment, TAG.Furniture, TAG.Chair]},
+            "Desk": {"tags": [TAG.Equipment, TAG.Furniture, TAG.Desk]},
+            "Table": {"tags": [TAG.Equipment, TAG.Furniture, TAG.Table]},
         },
     },
     "Fire_Safety_Equipment": {
@@ -282,6 +285,28 @@ equipment_subclasses = {
                     TAG.Equipment,
                 ],
             }
+        },
+    },
+    "Architectural_Equipment": {
+        "tags": [TAG.Equipment, TAG.Architectural],
+        "subclasses": {
+            "Barrier_Asset": {
+                "tags": [TAG.Equipment, TAG.Architectural, TAG.Barrier],
+                "subclasses": {
+                    "Door": {"tags": [TAG.Door, TAG.Equipment]},
+                    "Window": {"tags": [TAG.Window, TAG.Equipment]},
+                },
+            },
+            "Wall": {"tags": [TAG.Wall, TAG.Equipment]},
+            "Slab": {"tags": [TAG.Slab, TAG.Equipment]},
+            "Roof": {"tags": [TAG.Roof, TAG.Equipment]},
+            "Ceiling": {"tags": [TAG.Ceiling, TAG.Equipment]},
+            "Facade": {"tags": [TAG.Facade, TAG.Equipment]},
+            "Railing": {"tags": [TAG.Railing, TAG.Equipment]},
+            "Column": {"tags": [TAG.Column, TAG.Equipment]},
+            "Beam": {"tags": [TAG.Beam, TAG.Equipment]},
+            "Stair": {"tags": [TAG.Stair, TAG.Equipment]},
+            "Stair_Flight": {"tags": [TAG.Stair, TAG.Equipment]},
         },
     },
 }
